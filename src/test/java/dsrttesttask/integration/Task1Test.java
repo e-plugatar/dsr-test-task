@@ -31,7 +31,7 @@ final class Task1Test {
         );
     }
 
-    @ParameterizedTest
+    @ParameterizedTest(name = "singleCharMsg[{0}]")
     @ValueSource(strings = {"1", "k", "щ", "@", "汉"})
     void singleCharMsg(final String msg) throws Throwable {
         DefaultWebDriverAction.exec(
