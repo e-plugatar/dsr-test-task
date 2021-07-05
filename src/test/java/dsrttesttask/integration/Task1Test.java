@@ -14,11 +14,6 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
 final class Task1Test {
-    {
-        System.setProperty("default.waitTimeoutMs", "10000");
-        System.setProperty("default.pollingIntervalMs", "250");
-        System.setProperty("default.driverName", "chrome");
-    }
 
     @Test
     void emptyMsg() throws Throwable {
